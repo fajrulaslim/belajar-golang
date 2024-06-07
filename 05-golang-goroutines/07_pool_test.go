@@ -14,12 +14,12 @@ func TestPool(t *testing.T) {
 		},
 	}
 
-	// str1 := "Fajrul"
-	// str2 := "Aslim"
-	// pool.Put(&str1)
-	// pool.Put(&str2)
-	pool.Put("Fajrul")
-	pool.Put("Aslim")
+	str1 := "Fajrul"
+	str2 := "Aslim"
+	pool.Put(&str1)
+	pool.Put(&str2)
+	// pool.Put("Fajrul")
+	// pool.Put("Aslim")
 
 	for i := 0; i < 10; i++ {
 		go func() {
